@@ -16,8 +16,8 @@ def generate_launch_description():
                             FindPackageShare(
                                 "ublox_gps"
                             ),  # Name of the package where the launch file exists
-                            "ublox_gps_node_zedf9p",  # Subdirectory containing the launch file
-                            "launch.py",  # Name of the launch file
+                            "launch",  # Subdirectory containing the launch file
+                            "ublox_gps_node_zedf9p-launch.py",  # Name of the launch file
                         ]
                     )
                 )
