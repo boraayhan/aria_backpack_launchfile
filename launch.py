@@ -8,16 +8,16 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     return LaunchDescription(
         [
-            Node(package="rxjoy_pkg", executable="rxjoy_node"),
+            # Node(package="pkg", executable="node"),
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(
                     PathJoinSubstitution(
                         [
                             FindPackageShare(
-                                "livox_ros_driver2"
+                                "ublox_gps"
                             ),  # Name of the package where the launch file exists
-                            "launch_ROS2",  # Subdirectory containing the launch file
-                            "msg_MID360_launch.py",  # Name of the launch file
+                            "ublox_gps_node_zedf9p",  # Subdirectory containing the launch file
+                            "launch.py",  # Name of the launch file
                         ]
                     )
                 )
